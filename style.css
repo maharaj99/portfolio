@@ -352,6 +352,13 @@ main {
   border-radius: 8px;
   font-weight: 600;
   transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.badge i {
+  font-size: 1.2rem;
 }
 
 .badge:hover {
@@ -393,15 +400,47 @@ main {
   text-align: center;
 }
 
-.certifications {
-  margin-top: 2rem;
-  padding-top: 2rem;
-  border-top: 1px solid var(--glass-border);
+/* Certifications */
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
 }
 
-.certifications ul {
-  padding-left: 1.5rem;
-  margin-top: 1rem;
+.cert-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cert-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  background: rgba(0, 240, 255, 0.05);
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 240, 255, 0.1);
+  width: 100%;
+}
+
+.connector {
+  font-size: 1.2rem;
+  color: var(--accent-secondary);
+}
+
+.cert-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.cert-card p {
   color: #94a3b8;
 }
 
