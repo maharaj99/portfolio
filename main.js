@@ -55,9 +55,9 @@ const tl = gsap.timeline({
     onUpdate: (self) => {
       const progress = self.progress;
       // State Machine for Character Image
-      if (progress < 0.1) {
+      if (progress < 0.33) {
         if (character.src !== imgCoding.src) character.src = imgCoding.src;
-      } else if (progress >= 0.1 && progress < 0.15) {
+      } else if (progress >= 0.33 && progress < 0.66) {
         if (character.src !== imgStanding.src) character.src = imgStanding.src;
       } else {
         if (character.src !== imgWalking.src) character.src = imgWalking.src;
